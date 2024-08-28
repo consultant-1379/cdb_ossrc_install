@@ -1,0 +1,7 @@
+<suite name="PhysicalInitialInstall" >
+        <test name="PhysicalInitialInstall">
+                <classes>
+                        <class name="com.ericsson.ci.cloud.cdb_ossrc_install.test.cases.TorPhysicalEnvironmentSetUp" />
+                </classes>
+        </test>
+</suite>

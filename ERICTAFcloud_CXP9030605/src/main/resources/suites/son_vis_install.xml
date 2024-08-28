@@ -1,0 +1,7 @@
+<suite name="InitialInstallSonVisCDB" >
+        <test name="InitialInstallSonVisCDB">
+                <classes>
+                        <class name="com.ericsson.ci.cloud.cdb_ossrc_install.test.cases.SonVisEnvironmentSetUp" />
+                </classes>
+        </test>
+</suite>

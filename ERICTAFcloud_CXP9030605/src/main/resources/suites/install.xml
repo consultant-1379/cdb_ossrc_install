@@ -1,0 +1,7 @@
+<suite name="InitialInstallCDB" >
+        <test name="InitialInstallCDB">
+                <classes>
+                        <class name="com.ericsson.ci.cloud.cdb_ossrc_install.test.cases.EnvironmentSetUp" />
+                </classes>
+        </test>
+</suite>

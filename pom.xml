@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	<parent>
+        <groupId>com.ericsson.nms</groupId>
+        <artifactId>integration</artifactId>
+        <version>15.2.0.20</version>
+	</parent>
+    <!-- Each team will need to update the following section with the correct
+        information -->
+    <groupId>com.ericsson.ci.cloud</groupId>
+    <artifactId>cdb_ossrc_install</artifactId>
+
+    <version>1.0.47-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <taf_version>2.4.28</taf_version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.inject</groupId>
+                <artifactId>guice</artifactId>
+                <version>4.0-beta4</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ericsson.cifwk</groupId>
+                <artifactId>taf-bom</artifactId>
+                <version>2.4.28</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.ericsson.cifwk.taf</groupId>
+                    <artifactId>taf-maven-plugin</artifactId>
+                    <version>2.4.28</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>com.ericsson.cifwk.taf</groupId>
+                <artifactId>taf-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+  <scm>
+    <tag>cdb_ossrc_install-1.0.44</tag>
+  </scm>
+  <modules>
+    <module>ERICTAFcloud_CXP9030605</module>
+    <module>cite-tests</module>
+  </modules>
+</project>
